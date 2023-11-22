@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylsheet" href="styles.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <h1 id="title">CSK IPL Home Match Experience</h1>
+    <p id="description">Thank you for taking the time to help us imporve the staduim experience.</p>
+    <form id="survey-form" method="post">
+
+        <fieldset>
+            <label for="name" id="name-label">Name: <input type="text" id="name" placeholder="Enter your name"
+                    required></label>
+            <label for="email" id="email-label">Email: <input type="email" id="email" placeholder="Enter your email"
+                    required></label>
+            <label for="age" id="age-label">Age: <input type="number" id="age" min=13 max=100
+                    placeholder="Enter your age" required></label>
+        </fieldset>
+
+        <fieldset>
+            <label>Have you been to a game before?</label>
+            <label for="yes"><input type="radio" id="yes" name="attendance" value="yes" class="inline" checked>
+                Yes</label>
+
+
+            <label for="no"><input type="radio" id="no" name="attendance" value="no" class="inline"> No</label>
+        </fieldset>
+
+
+        <fieldset>
+            <label>Match Date?<input type="date"></label>
+            <label>Match Against?
+                <select id="dropdown" name="dropdown">
+                    <option value="">Select team</option>
+                    <option value="1">Delhi Capitals</option>
+                    <option value="2">Gujarat Titans</option>
+                    <option value="3">Kolkata Knight Riders</option>
+                    <option value="4">Lucknow Super Giants</option>
+                    <option value="5">Mumbai Indians</option>
+                    <option value="6">Punjab Kings</option>
+                    <option value="7">Rajasthan Royals</option>
+                    <option value="8">Royal Challengers Bangalore</option>
+                    <option value="9">Sunrisers Hyderabad</option>
+                </select>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <p>Areas to improve?</p>
+            <label><input type="checkbox" id="seating">Seating</label>
+            <label><input type="checkbox" id="parking">Parking</label>
+            <label><input type="checkbox" id="food and beverages">Food and beverages</label>
+            <label><input type="checkbox" id="ticket fair">Ticket fair</label>
+        </fieldset>
+
+        <fieldset>
+            <label for="suggestions">Any Suggestions?
+                <textarea name="suggestions" id="suggestions" cols="30" rows="10"
+                    placeholder="Enter your suggestions here."></textarea>
+            </label>
+        </fieldset>
+
+    </form>
+</body>
+<html>

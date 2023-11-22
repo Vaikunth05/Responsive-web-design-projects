@@ -1,0 +1,82 @@
+h1 {
+    text-align: center;
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0;
+}
+
+.marker {
+    width: 200px;
+    height: 25px;
+    margin: 10px auto;
+}
+
+.cap {
+    width: 60px;
+    height: 25px;
+}
+
+.sleeve {
+    width: 110px;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.5);
+    /*  border-left-width: 10px;
+    border-left-style: solid;
+    border-left-color: black; */
+    border-left: 10px double rgba(0, 0, 0, 0.75);
+}
+
+.cap,
+.sleeve {
+    display: inline-block;
+}
+
+.red {
+    background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
+    /* box-shadow: offsetX offsetY blurRadius spreadRadius color;*/
+    box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
+}
+
+.green {
+    background: linear-gradient(#55680D, #71F53E, #116C31);
+    box-shadow: 0 0 20px 0 #3B7E20CC;
+    /* CC for alpha channel */
+}
+
+.blue {
+    background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+    box-shadow: 0 0 20px 0 hsla(223, 59%, 31%, 0.8);
+}
+
+. {
+    /* ||PRIMARY COLORS */
+    background-color: rgb(225, 225, 0);
+    background-color: rgb(0, 225, 225);
+    background-color: rgb(225, 0, 225);
+
+    /* ||SECONDARY COLORS */
+    /* orange */
+    background-color: rgb(255, 127, 0);
+    /* spring green */
+    background-color: rgb(0, 255, 127);
+    /* violet */
+    background-color: rgb(127, 0, 255);
+
+    /* ||TERTIARY COLORS */
+    /* chartreuse green (green + yellow) */
+    background-color: rgb(127, 255, 0);
+    /* azure (blue + cyan) */
+    background-color: rgb(0, 127, 255);
+    /* rose (red + magenta). */
+    background-color: rgb(255, 0, 127);
+}
+
+/* || HEX COLOR CODE */
+/* #xxxxx */
+/*  (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F) */
+/* #XXxxxx - 1st two value = red */
+/* #xxXXxx - 2nd two value = green */
+/* #xxxxXX - 3rd two value = blue */
+/* 0 is min, and F is max */
