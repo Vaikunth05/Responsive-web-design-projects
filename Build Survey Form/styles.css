@@ -11,15 +11,21 @@ header {
 }
 
 form {
+    margin: 0 auto;
     max-width: 500px;
+    min-width: 300px;
 }
 
-/* label {
+label {
     display: block;
-} */
+}
 
 input,
 textarea,
 select {
     width: 100%;
+}
+
+input[type="checkbox"] {
+    margin: 0;
 }
