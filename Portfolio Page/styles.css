@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Poppins&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+:root {
+    --main-violet: #93009C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.4;
+    width: 100%;
+}
+
+#navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 5;
+    background-color: var(--main-violet);
+    box-shadow: rgba(0,  0, 0, 0.5) 0px 2px 0px;
+}
+
+.nav-link {
+    list-style: none;
+    padding: 20px;
+}
+
+li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+#welcome-section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    background-image: linear-gradient(62deg, rgba(98, 98, 98, 0.768) 0%, black 100%);
+}
+
+#welcome-section > h1 {
+    font-family: Raleway, sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+    color: aliceblue;
+}
+
+#welcome-section > p {
+    font-size: 2rem;
+    font-weight: 400;
+    font-style: italic;
+    color: var(--main-violet);
+}
+
+.project-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 2em;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1280px;
+}
+
+#project{
+    padding: 5rem 2rem;
+    text-align: center;
+    background-color: #233152f5;
+}
+
+#project .project-header {
+    max-width: 640px;
+    margin: 0px auto 6rem auto;
+    text-align: center;
+    border-bottom: 0.2rem solid;
+    color: aliceblue;
+}
+
+#project h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+#project img {
+    display: block;
+}
+
+#project .project-image {
+    object-fit: cover;
+    width: 100%;
+    height: calc(100% - 6.8rem);
+    margin-bottom: 0;
+}
+
+#project .project-title {
+    background-color: gray;
+    font-size: 1.5rem;
+    padding: 2rem 0.5rem;
+    margin-top: 0;
+    text-align: center;
+}
+
+#project .project-title span {
+    color: gray;
+    padding: 0.2rem;
+}
+
+#project .project-title:hover span {
+    color: orange;
+    transition: color 0.3ms ease-in;
+    padding: 0.2rem;
+}
+
+.show-all{
+    color: aliceblue;
+    font-size: 1.5rem;
+    background-color: gray;
+    width: max-content;
+    display: flex;
+    align-content: center;
+    margin: 1rem auto 1rem auto;
+    padding: 0px 1rem;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: gray 0.3ms ease-in;
+}
+
+.show-all:hover {
+    background-color: var(--main-violet);
+    transition: var(--main-violet) 0.3ms ease-in;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80vh;
+    background-color: gray;
+    padding: 0 2rem;
+}
+
+.contact-container h2 {
+    font-weight: 700;
+    font-size: 4rem;
+    text-align: center;
+    color: aliceblue;
+}
+
+.contact-container p {
+    font-size: 1.5rem;
+    font-weight: 100;
+    font-style: italic;
+    text-align: center;
+    color: aliceblue;
+}
+
+#contact .contact{
+    font-size: 1.8rem;
+}
+
+#contact .contact:hover {
+    font-size: 1.8rem;
+    transition: transform 0.3ms ease-out;
+}
+
+#contact .btn {
+    display: inline-block;
+    padding: 1rem 1rem;
+    font-size: 1.5rem;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 980px;
+    margin-top: 2rem;
+}
+
+
+footer {
+    font-size: 1.5rem;
+    color: aliceblue;
+    padding: 2rem 2rem;
+    margin: auto auto;
+    text-align: center;
+    background-color: gray;
+    border-top: 3px solid var(--main-violet);
+}
+
+@media  only screen and (width<900px) {
+    .contact-links {
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 780px;
+        margin-top: 2rem;
+        text-wrap: nowrap;
+    }
+    
+}
